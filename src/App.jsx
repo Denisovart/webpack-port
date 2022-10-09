@@ -1,7 +1,7 @@
 const App = () => {
   return (
-    <div className="bg-red-500 text-green-600">
-      Create, Explore, Expand, Conquer Asap Yuba
+    <div className="flex justify-center text-green-600 bg-black">
+      Create, Explore, Expand, Conquer Asap Yuba asdasd
     </div>
   );
 }

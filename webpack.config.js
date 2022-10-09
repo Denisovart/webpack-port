@@ -13,7 +13,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: production ? '[name].[contenthash].js]' : '[name].js'
+    filename: production ? '[name].[contenthash].js' : '[name].js'
   },
   module: {
     rules: [
@@ -68,7 +68,7 @@ module.exports = {
       template: path.resolve(__dirname, "src/index.html")
     }),
     new MiniCssExtractPlugin({
-      filename: production ? '[name].[contenthash].css]' : '[name].css'
+      filename: production ? '[name].[contenthash].css' : '[name].css'
     }),
     !production && new ReactRefreshPlugin()
   ].filter(Boolean),
