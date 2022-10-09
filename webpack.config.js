@@ -41,6 +41,20 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: [
+          production ? MiniCssExtractPlugin.loader : 'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          "postcss-loader"
+        ]
       }
     ]
   },

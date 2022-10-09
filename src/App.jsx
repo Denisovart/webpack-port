@@ -1,9 +1,7 @@
-import styles from "./styles.scss"
-
 const App = () => {
   return (
-    <div className={styles.content}>
-      Hello World!asd asdasd 
+    <div className="bg-red-500 text-green-600">
+      Create, Explore, Expand, Conquer Asap Yuba
     </div>
   );
 }
